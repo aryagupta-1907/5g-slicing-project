@@ -1,0 +1,40 @@
+﻿,Use CaseType (Input 1),LTE/5G UE Category (Input 2),Technology Supported (Input 3),Day (Input4),Time (Input 5),GBR (Input 6),Packet Loss Rate (Reliability),Packet Delay Budget (Latency),Slice_Type,Type
+,AR/VR/Gaming,All,LTE/5G,All,All,GBR,0.001,50ms,eMBB,1
+,AR/VR/Gaming,All,LTE/5G,All,All,Non-GBR,0.001,100ms,eMBB,5
+,,,,,,,,,,
+,Healthcare,All,"IoT (LTE-M, NB-IoT)",All,All,GBR,0.000001,10ms,URLLC,3
+,,,,,,,,,,
+,Industry 4.0,All,"IoT (LTE-M, NB-IoT)",All,All,Non-GBR,0.001,50ms,mMTC,1
+,Industry 4.0,All,"IoT (LTE-M, NB-IoT)",All,All,GBR,0.000001,10ms,URLLC,3
+,,,,,,,,,,
+,IoT Devices,All,"IoT (LTE-M, NB-IoT)",All,All,GBR,0.01,50ms,mMTC,2
+,IoT Devices,All,"IoT (LTE-M, NB-IoT)",All,All,Non-GBR,0.01,300ms,mMTC,4
+,,,,,,,,,,
+,Public Safety/E911,All,LTE/5G,All,All,GBR,0.000001,10ms,URLLC,3
+,,,,,,,,,,
+,Smart City & Home,All,"IoT (LTE-M, NB-IoT)",All,All,GBR,0.01,50ms,mMTC,2
+,Smart City & Home,All,"IoT (LTE-M, NB-IoT)",All,All,Non-GBR,0.01,300ms,mMTC,4
+,,,,,,,,,,
+,Smart Transportation,All,"IoT (LTE-M, NB-IoT)",All,All,GBR,0.000001,10ms,URLLC,3
+,,,,,,,,,,
+,Smartphone,All,LTE/5G,All,All,GBR,0.01,75ms,eMBB,6
+,Smartphone,All,LTE/5G,All,All,GBR,0.01,100ms,eMBB,7
+,Smartphone,All,LTE/5G,All,All,GBR,0.001,150ms,eMBB,8
+,Smartphone,All,LTE/5G,All,All,GBR,0.000001,300ms,eMBB,9
+,Smartphone,All,LTE/5G,All,All,Non-GBR,0.000001,60ms,eMBB,10
+,Smartphone,All,LTE/5G,All,All,Non-GBR,0.000001,100ms,eMBB,11
+,Smartphone,All,LTE/5G,All,All,Non-GBR,0.000001,300ms,eMBB,12
+,,,,,,,,,,
+,,,,,,,,,,
+,,Training,Original,,,,,,,
+,,Sim -1,Use given 6 unknowns,,,Slice,UNKNOWNS,,,Slice
+,,Sim - 2,> 75% load on one slice,,,,,,,
+,,Sim - 3,Slice Failure (Smallest),,,,,,,
+,,,,,,"LTE/5G & IoT (LTE-M, NB-IoT)",2,2,eMBB/mMTC,1
+,1,0.01,10ms,,,"IoT (LTE-M, NB-IoT)",1,2,mMTC,2
+,2,0.001,50ms,,,"IoT (LTE-M, NB-IoT)",3,1,URLLC,3
+,3,0.000001,60ms,,,"IoT (LTE-M, NB-IoT)",1,7,mMTC,4
+,4,,75ms,,,LTE/5G,1,5,eMBB,7
+,5,,100ms,,,LTE/5G,3,5,eMBB,11
+,6,,150ms,,,,,,,
+,7,,300ms,,,,,,,
